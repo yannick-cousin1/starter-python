@@ -14,9 +14,9 @@ with open("data.txt") as file:
 #Note sure if it's considered cheating :
 #	number = content.split()
 #	print ("Nombre de mots = ", length(number))
-# else :
+
 
 #using regex to isolate all words in a list
-	words = re.findall(r"[\w-]+", content)
+	words = re.findall(r"\b[a-zA-Z]{1,}\b", content)
 	print ("Nombre de mots = ", length(words))
 	
