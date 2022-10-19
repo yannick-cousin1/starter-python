@@ -1,4 +1,7 @@
-""" L'idée est de définir toutes les combinaisons possible en partant de la chaine de caractère originale.
+"""
+J'ai essayé d'utiliser la logique combinatoire, mais ces notions étant encore floues, je n'ai pas pu les implémenter
+ 
+L'idée est de définir toutes les combinaisons possible en partant de la chaine de caractère originale.
 Par exemple, si la chaine originale contient 3 caractères, il y aura 3! (6) combinaisons possible :
 chaine originale = abc
 combinaisons = abc / acb / bac / bca / cab / cba
@@ -9,7 +12,7 @@ autant de fois que nécessaire pour obtenir toute les combinaisons.
 J'ai réussi à implémenter le décalage, mais pas à générer toutes les combinaisons commençant par un même caractère
 Du coup, je n'ai pas non plus implémenter le "main" qui devait ensuite, pour chaque combinaison, chercher si
 elle existe dans le dictionnaire (pour ne garder que celle qui y sont). Et de calculer le nombre de point
-de chaque combinaison "gagnante". 
+de chaque combinaison "gagnante".
 """
 
 def length(string):    #function to return length of a string (or a list)
