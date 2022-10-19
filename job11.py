@@ -1,3 +1,7 @@
+""" Please note that the job has changed after I've done it
+	The original goal was to count the number of unique extension """
+
+
 #import regex mod
 import re
 

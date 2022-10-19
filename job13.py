@@ -12,10 +12,6 @@ user_input = int(input("Entrez un nombre : "))
 
 with open("data.txt") as file:
 	content = file.read()
-	words = re.findall(r"\b[a-zA-Z]{%d}\b" %(user_input) , content)
-
-
-
-
+	words = re.findall(r"\b[a-zA-Z]{%d}\b" %(user_input) , content) #Using user's input inside a regex !
+																	#It does not count words with special char
 	print (f"Nombre de mots contenant {user_input} caractères : {length(words)}")
-

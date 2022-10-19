@@ -1,6 +1,4 @@
 
-print ("Bonjour, comment t'appelles tu ?")
-
-prenom = input()
+prenom = input("Bonjour, comment t'appelles tu ? ")
 
 print ("Bonjour", prenom)

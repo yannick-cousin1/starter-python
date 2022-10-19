@@ -3,7 +3,7 @@ def fill_myList_and_sort(*args):
 	myList = []
 	for x in args:
 		myList.append(x)
-	myList.sort()
+	myList.sort()					#sort literraly do all the job
 	for y in myList:
 		print (y)
 

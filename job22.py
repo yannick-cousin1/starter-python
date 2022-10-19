@@ -1,7 +1,5 @@
 
-string = input("Entrez une chaine de caractères : ")
-print ("choose : upper / lower / title/ clean :")
-func = input ("Entrez la fonction voulue : ")
+
 
 def length(string):
 	c = 0
@@ -13,7 +11,7 @@ def myUper(string):
 	lowercase = "abcdefghijklmnopqrstuvwxyz"
 	uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	uppered = '' #will be the string to return at the end
-	
+
 	#for each char in the string
 	for c in string:
 		#if the char is a whitespace, append it to "uppered"
@@ -62,7 +60,7 @@ def myTitle(string):
 			elif string[c] == lowercase[x] and string[c-1] != ' ':
 				titled += string[c]
 	# Now we need to get the very first char of the string to be an uppercase (there is no whitespace before it)
-	#string cannot be modified so let's use a list 
+	#string cannot be modified so let's use a list
 	LIST = []
 	final_titled = ''
 	#Put every char of our string to the list
@@ -110,6 +108,11 @@ def myClean(string):
 
 	return final_cleaned
 
+
+string = input("Entrez une chaine de caractères : ")
+print ("choose : upper / lower / title/ clean :")
+func = input ("Entrez la fonction voulue : ")
+
 if func == "upper":
 	print (myUper(string))
 elif func == "lower":
@@ -120,4 +123,3 @@ elif func == "clean":
 	print (myClean(string))
 else:
 	print ("Erreur de choix, try again")
-

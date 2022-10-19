@@ -1,3 +1,5 @@
+""" For this one, I wasn't sure if I could have use "split" so I've done it with regex """
+
 #regex mod
 import re
 
@@ -16,7 +18,6 @@ with open("data.txt") as file:
 #	print ("Nombre de mots = ", length(number))
 
 
-#using regex to isolate all words in a list
+#using regex to isolate all words in a list (it does not count words with special char)
 	words = re.findall(r"\b[a-zA-Z]{1,}\b", content)
 	print ("Nombre de mots = ", length(words))
-	

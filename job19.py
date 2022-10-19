@@ -8,7 +8,7 @@ def length(list):
 def smallest_one(list):
 	min = 2147483647 #maximum value for integer 32 bits
 	for z in list:
-		if z < min:
+		if z < min:    #compare each value with min, if it's smaller, it's the new min. Looping all the list
 			min = z
 	return min
 

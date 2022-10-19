@@ -17,14 +17,13 @@ for i in word:
 for j in range(1,length(LIST)):
 	if LIST[-j] == LIST[-1-j]:
 		print ('', end = '')
-#if it's not, then swap them and break
+#if it's not equal, then swap them and break
 	else:
 		tmp = LIST[-1-j]
 		LIST[-1-j] = LIST[-j]
 		LIST[-j] = tmp
 		break
-	
-print (LIST)
 
-
-
+for k in LIST:
+	print(k, end = '')   #print each value in the list side by side
+print ("")
